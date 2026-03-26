@@ -1,0 +1,165 @@
+.samples-page {
+  display: grid;
+  gap: 16px;
+}
+
+.samples-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.samples-header h1 {
+  margin: 0 0 6px;
+}
+
+.samples-header p {
+  margin: 0;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+}
+
+.search-form input {
+  min-width: 260px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(231, 234, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e7eaff;
+}
+
+.search-form button,
+.button-primary {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #6f7eff;
+  color: white;
+  cursor: pointer;
+}
+
+.search-form button:hover,
+.button-primary:hover {
+  background: #5b6af3;
+}
+
+.search-form button:disabled,
+.button-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.samples-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid rgba(231, 234, 255, 0.14);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.card h2 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.table-wrap {
+  overflow: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid rgba(231, 234, 255, 0.1);
+  white-space: nowrap;
+}
+
+.data-table tbody tr {
+  cursor: pointer;
+}
+
+.data-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.data-table tbody tr.selected {
+  background: rgba(111, 126, 255, 0.2);
+}
+
+.detail-panel h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+.detail-grid {
+  margin: 0 0 12px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 6px 8px;
+  font-size: 13px;
+}
+
+.detail-grid dt {
+  opacity: 0.75;
+}
+
+.detail-grid dd {
+  margin: 0;
+}
+
+.audit-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.audit-list li {
+  border: 1px solid rgba(231, 234, 255, 0.12);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.audit-title {
+  font-size: 13px;
+}
+
+.audit-meta {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.panel-state {
+  padding: 12px;
+  border: 1px dashed rgba(231, 234, 255, 0.2);
+  border-radius: 8px;
+  opacity: 0.9;
+}
+
+.panel-error {
+  border-color: rgba(255, 96, 96, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .samples-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,98 @@
+.overview-page {
+  display: grid;
+  gap: 16px;
+}
+
+.overview-hero {
+  border: 1px solid rgba(231, 234, 255, 0.14);
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.overview-hero h1 {
+  margin: 0 0 8px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.overview-card {
+  border: 1px solid rgba(231, 234, 255, 0.14);
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  display: grid;
+  gap: 10px;
+}
+
+.overview-card h2 {
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+
+.overview-label {
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-bottom: 6px;
+}
+
+.overview-label-spaced {
+  margin-top: 12px;
+}
+
+.overview-list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.overview-card-footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.overview-section {
+  border: 1px solid rgba(231, 234, 255, 0.14);
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  display: grid;
+  gap: 10px;
+}
+
+.overview-section h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.mapping-grid,
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.mapping-card,
+.signal-card {
+  border: 1px solid rgba(231, 234, 255, 0.12);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+@media (max-width: 1024px) {
+  .overview-grid,
+  .mapping-grid,
+  .signal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
