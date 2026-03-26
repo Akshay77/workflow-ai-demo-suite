@@ -36,6 +36,6 @@ Notes:
   - Ask a question → see grounded answer + cited snippets
   - Click Helpful / Not Helpful → history updates
 
-## More context (for recruiters / HMs)
+## More context
 
 - `DEMO_SUITE_OVERVIEW.md`: what each demo is, what it demonstrates, why it’s relevant
